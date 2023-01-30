@@ -1,6 +1,9 @@
 import turtle as t
 import math as m
 a=t.Turtle()
+screen=t.Screen()
+screen.tracer(0,0)
+
 def rectangle(hor,ver,col):
     a.pendown()  
     a.pencolor(col)

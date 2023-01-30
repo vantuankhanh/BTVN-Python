@@ -56,15 +56,16 @@ def random_walk(turtles):
         if turtle.xcor() > 250:
             run = False  
             log = 'The '+str(list_turtle[turtles.index(turtle)][1])+' turtle in line number '+str(list_turtle[turtles.index(turtle)][0])+' won the race'
-            answer=''
-            while answer!='y':
+            check = False
+            while check:
                 answer=screen.textinput('Result',log+'\nDo you want to try again? (y/n)')
                 if answer is None or answer.lower()=='n':
-                    screen.title('Good bye')
+                    check = False
                     screen.clear()
                     screen.bye()
+                else:
+                    break
                 
 run = True
 while run:
     random_walk(all_turtles)
-    

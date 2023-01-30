@@ -5,6 +5,7 @@ d=0
 t=30
 c=['red','yellow','orange','blue','green']
 turtle.bgcolor('black')
+a.speed(0)
 while d<t:
     a.color(c[d%5])
     for i in range(2):
@@ -12,4 +13,4 @@ while d<t:
         a.circle(r/2,90)
     a.left(360/t)
     d+=1
-t.done
+turtle.exitonclick()
