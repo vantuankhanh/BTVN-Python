@@ -68,7 +68,7 @@ class clock:
         self.hand.seth(90-((self.hour%12)*60*60+self.minute*60+self.second)/3600*30)
         self.hand.down()
         self.hand.color('black')
-        self.hand.pensize(6)
+        self.hand.pensize(4)
         self.hand.fd(200)
         #minute hand
         self.hand.up()
