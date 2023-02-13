@@ -2,6 +2,7 @@ from tkinter import *
 
 main = Tk()
 main.geometry('500x150+700+400')
+main.resizable(0,0)
 
 def convert():
     global weight
